@@ -1,23 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class play : MonoBehaviour
+public class Gamestart : MonoBehaviour
 {
-    public void ToMainGame()
-    {
-        SceneManager.LoadScene("Home");
-    }
     // Start is called before the first frame update
     void Start()
     {
-        
+             
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown("right"))
+        {
+        GetComponent<Rigidbody2D>().angularVelocity = -2500;
+        }    
     }
 }
