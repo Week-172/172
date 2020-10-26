@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 56c104dbdb6f9af44a949ab9de27ff3e
 TextureImporter:
   internalIDToNameTable:
@@ -17,6 +18,11 @@ TextureImporter:
   - first:
       213: -5866635056948576390
     second: CatapultBoi_4
+=======
+guid: cfbeb43b9737b13438d06aad7ea2bfc3
+TextureImporter:
+  internalIDToNameTable: []
+>>>>>>> 573b4bc923a3b74b0546fab9496d64174eedb4be
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -47,7 +53,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
+=======
+    filterMode: -1
+>>>>>>> 573b4bc923a3b74b0546fab9496d64174eedb4be
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -56,7 +66,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> 573b4bc923a3b74b0546fab9496d64174eedb4be
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -81,6 +95,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -106,6 +121,9 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> 573b4bc923a3b74b0546fab9496d64174eedb4be
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,6 +132,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites:
     - serializedVersion: 2
       name: CatapultBoi_0
@@ -220,6 +239,9 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+=======
+    sprites: []
+>>>>>>> 573b4bc923a3b74b0546fab9496d64174eedb4be
     outline: []
     physicsShape: []
     bones: []
