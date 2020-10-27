@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Gamestart : MonoBehaviour
 {
+    
     [SerializeField]
     float LaunchSpeed;
     // Start is called before the first frame update
@@ -15,9 +16,9 @@ public class Gamestart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("right"))
+        if(Input.GetKeyUp("right"))
         {
-        GetComponent<Rigidbody2D>().angularVelocity = LaunchSpeed;
+        GetComponent<Rigidbody2D>().AddTorque(LaunchSpeed);
         }    
     }
 }
