@@ -11,7 +11,7 @@ public class endless : MonoBehaviour
     void Start()
     {
         startpos=transform.position.x;
-        length=GetComponent<SpriteRenderer>().bounds.size.x;
+        length=(GetComponent<SpriteRenderer>().bounds.size.x)/2;
     }
     // Update is called once per frame
     void Update()
