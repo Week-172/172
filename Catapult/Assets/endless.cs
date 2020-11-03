@@ -4,23 +4,21 @@ using UnityEngine;
 
 public class endless : MonoBehaviour
 {
-    float length, startpos;
-    public GameObject cam;
-    public float parallaxEffect;
+    public float length, startpos;
+
+    [SerializeField]
+    GameObject Infiniter;
+    [SerializeField]
+    GameObject Player;
     // Start is called before the first frame updates 
     void Start()
     {
-        startpos=transform.position.x;
-        length=(GetComponent<SpriteRenderer>().bounds.size.x)/2;
+        length=GetComponent<SpriteRenderer>().bounds.size.x;
     }
     // Update is called once per frame
     void Update()
     {
-        float temp = cam.transform.position.x * (1 - parallaxEffect);
-        float dist= cam.transform.position.x * parallaxEffect;
-        transform.position=new Vector3(startpos + dist, transform.position.y, transform.position.z);
-        if(temp > startpos + length) 
-        startpos+=length;
-        else if (temp < startpos+length) startpos-=length;
+        if(Player.transform.position.x - Infiniter.transform.position.x >= length)
+        Infiniter.transform.position = new Vector2(Player.transform.position.x, Infiniter.transform.position.y);       
     }
 };
