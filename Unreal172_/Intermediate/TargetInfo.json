@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Unreal172_",
+			"Path": "C:\\Users\\Yash Verma\\Desktop\\Game training\\172\\Unreal172_\\Source\\Unreal172_.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Unreal172_Editor",
+			"Path": "C:\\Users\\Yash Verma\\Desktop\\Game training\\172\\Unreal172_\\Source\\Unreal172_Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
