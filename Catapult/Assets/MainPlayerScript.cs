@@ -16,21 +16,23 @@ public class MainPlayerScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+        void Update()
     {
         if(rb2d.bodyType==RigidbodyType2D.Kinematic)
         {
+            var newV = new Vector2( 48.09083f, 0f);
+            
             if(Input.GetKey("up"))
-            rb2d.velocity=new Vector2(48.09083f, 20f);
+                newV.y = 20f;
             else if(Input.GetKey("down"))
-            rb2d.velocity=new Vector2(48.09083f, -20f);
-            else if(Input.GetKey("left"))
-            rb2d.velocity=new Vector2(-DampAccn*48.09083f,rb2d.velocity.y);
-            else if(Input.GetKey("right"))
-            rb2d.velocity=new Vector2(BoostAccn*48.09083f,rb2d.velocity.y);
-            else
-            rb2d.velocity=new Vector2(48.09083f, 0f);
+                newV.y = -20f;
 
+            if(Input.GetKey("left"))
+                newV.x *= -DampAccn;
+            else if(Input.GetKey("right"))
+                newV.x *= BoostAccn;
+            
+            rb2d.velocity=newV;
         }
     }
 }
