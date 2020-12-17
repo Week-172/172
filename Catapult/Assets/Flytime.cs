@@ -7,6 +7,9 @@ public class Flytime : MonoBehaviour
     GameObject Pilot;
     Animator anima;
     Rigidbody2D rb2d;
+    
+    [SerializeField]
+    Transform TopLimit;
     [SerializeField]
     Transform BackLimit;
     [SerializeField]
@@ -39,6 +42,8 @@ public class Flytime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(transform.position.y>TopLimit.position.y)
+        transform.position=new Vector2(transform.position.x,TopLimit.position.y);
         if(transform.position.x<BackLimit.position.x)
         transform.position=new Vector2(BackLimit.position.x,transform.position.y);
         if(transform.position.x>FrontLimit.position.x)
