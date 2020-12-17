@@ -439,7 +439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365203891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.604916, y: 7.115645, z: -10}
+  m_LocalPosition: {x: 15.510384, y: 7.115645, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1397508141}
@@ -592,7 +592,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.604916, y: 7.115645, z: -10}
+  m_LocalPosition: {x: 15.510384, y: 7.115645, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1274,7 +1274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962857753}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 13.8, z: 0}
+  m_LocalPosition: {x: 0, y: 13.8, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1077174639}
@@ -1311,8 +1311,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirstPoint: {fileID: 962857754}
   LastPoint: {fileID: 1117002667}
+  MC: {fileID: 634199585}
   AirEnemies:
   - {fileID: 430529089273257486, guid: 849eb74b852e4f04d829e94c485160b4, type: 3}
+  SpawnCooldown: 1
 --- !u!4 &1077174639
 Transform:
   m_ObjectHideFlags: 0
@@ -1321,7 +1323,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077174637}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.689575, y: -0.21564484, z: -3.3843098}
+  m_LocalPosition: {x: 47.689575, y: -0.21564484, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 962857754}
@@ -1353,7 +1355,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117002666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -9.5, z: 0}
+  m_LocalPosition: {x: 0, y: -9.5, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1077174639}
