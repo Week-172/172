@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1769706688387554677}
   - component: {fileID: 1769706688387554682}
   - component: {fileID: 430529089273257486}
+  - component: {fileID: 1106360117933386084}
+  - component: {fileID: -4035769878065294467}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -27,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769706688387554683}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.41, y: 7.01, z: -0.5}
+  m_LocalPosition: {x: 4.41, y: 7.01, z: 0}
   m_LocalScale: {x: 8.427624, y: 8.427624, z: 8.427624}
   m_Children: []
   m_Father: {fileID: 0}
@@ -125,3 +127,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!70 &1106360117933386084
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769706688387554683}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009573719, y: -0.0006234013}
+  m_Size: {x: 0.18181457, y: 0.18181457}
+  m_Direction: 0
+--- !u!114 &-4035769878065294467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769706688387554683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028bb3cb79675244c87a1380660c8a45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

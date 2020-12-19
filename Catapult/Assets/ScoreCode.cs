@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class ScoreCode : MonoBehaviour
 {
-    [SerializeField] Text m_MyText;
+    [SerializeField] Text Score;
     [SerializeField] Transform MC;
     void Update()
     {
-        m_MyText.text=(MC.position.x+10.91).ToString("0");
+        Score.text=(MC.position.x+10.91).ToString("0");
+        //Later, to be filled for damage to MC
     }
 }

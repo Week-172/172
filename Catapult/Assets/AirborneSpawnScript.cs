@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,27 +6,31 @@ public class AirborneSpawnScript : MonoBehaviour
 {
     float timer;
     
+    //[SerializeField]
+    //ScoreCode ScoreCode;
     [SerializeField]
     Transform FirstPoint;
     [SerializeField]
     Transform LastPoint;
     [SerializeField]
     Rigidbody2D MC;
-    public Rigidbody2D[] AirEnemies;
+    public GameObject[] AirEnemies;
     public float SpawnCooldown; 
+    public int IncreaseEnemyType;
 
-    // Start is called before the first frame update
     void Start()
     {
+        IncreaseEnemyType=0;
         timer=0;
     }
 
-    // Update is called once per frame
     void Update()
     {
         timer+=Time.deltaTime;
         if(MC.isKinematic&&CanSpawn())
-            StartSpawning();
+        StartSpawning();
+        //if(ScoreCode.Score.text=="2000")
+        //IncreaseEnemyType=1;
     }
     
     bool CanSpawn()
@@ -41,10 +45,8 @@ public class AirborneSpawnScript : MonoBehaviour
 
     void StartSpawning()
     {
-        int enemyno= Random.Range(0,AirEnemies.Length);
+        int enemyno= Random.Range(0,IncreaseEnemyType);
         float randomSpawnPoint= Random.Range(LastPoint.position.y,FirstPoint.position.y);
-        Rigidbody2D Enemy;
-        Enemy=Instantiate(AirEnemies[enemyno],new Vector3(FirstPoint.position.x,randomSpawnPoint,-0.5f),transform.rotation);
-        Enemy.velocity=new Vector2(25f,0f);
+        Instantiate(AirEnemies[enemyno],new Vector3(FirstPoint.position.x,randomSpawnPoint,-0.5f),transform.rotation);
     }
 }
